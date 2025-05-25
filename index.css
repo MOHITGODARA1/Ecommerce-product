@@ -251,7 +251,6 @@
    margin-top: 80px;
    font-family: var(--font-style);
    color: var(--text-color);
-   /* padding-left: 70px; */
 }
 .Limited{
    margin-top: 15px;
@@ -259,14 +258,12 @@
    font-weight: 700;
    font-size: 50px;
    padding-right: 278px;
-   /* padding-left: 70px; */
 }
 .explaincontent{
    width: 73%;
 
 }
 .explation{
-   /* padding-left: 70px; */
    color: var(--text-color);
    font-family: var(--font-style);
    margin-top: 10px;
@@ -411,4 +408,36 @@
    .mobilenavlelement{
       display: block;
    }
+   .company{
+      padding-left: 11px;
+      margin-top: 41px;
+   }
+   .Limited{
+      padding-left: 11px;
+        margin-top: 10px;
+        font-size: 36px;
+        padding-right: 2px;
+   }
+   .explation{
+      margin-left: 11px;
+      font-size: 15px;
+   }
+   .explaincontent {
+    width: 100%;
+   }
+   .ammount{
+      padding-left: 11px;
+   }
+   .cutprice{
+      padding-left: 11px;
+   }
+   .allcartrelateddiv{
+      justify-content: space-evenly;
+   }
+   .minus{
+   margin-left: 0px;
+}
+.plus{
+   margin-right: 0px;
+}
 }
