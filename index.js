@@ -47,12 +47,15 @@ const text = document.querySelector(".count");
 let count=0;
 plus.addEventListener("click",()=>{
    count++;
+
    text.textContent=count;
+   countdisplay(count);
 });
 minus.addEventListener("click",()=>{
    if(count>0){
       count--;
       text.textContent=count;
+      countdisplay(count);
    }
 });
 
@@ -81,4 +84,19 @@ const delet=document.querySelector(".delet");
 delet.addEventListener("click",()=>{
    document.querySelector(".lowerhoverdiv").style.display="";
       document.querySelector(".lowwerdivifselected").style.display="none";
+      countdisplay(0);
+      count=0;
+      text.textContent=count;
 });
+
+//count display on cart
+
+const div=document.querySelector(".itemcount");
+const display=document.querySelector(".itemscount");
+function countdisplay(count){
+   div.style.display="flex";
+   if(count==0){
+      div.style.display="none";
+   }
+   display.textContent=count;
+}
