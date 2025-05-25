@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navelement">
+      <div class="leftnavbarsection">
+        <img src="images/logo.svg" alt="logo">
+        <a href="#" class="navitemlink">Collections</a>
+        <a href="#" class="navitemlink">Men</a>
+        <a href="#" class="navitemlink">Women</a>
+        <a href="#" class="navitemlink">About</a>
+        <a href="#" class="navitemlink">Contact</a>
+      </div>
+      <div class="rightnavbarsection">
+        <img src="images/icon-cart.svg" alt="cart" class="cartimage">
+        <img src="images/image-avatar.png" alt="profile" class="profileimage">
+      </div>
+      <div class="hoverdiv">
+        <p class="cartname">CART</p>
+        <hr class="hoverline">
+        <div class="lowwerdivifselected">
+
+          <div class="ifselected">
+              <img src="images/image-product-1-thumbnail.jpg" alt="shose" class="addshouse">
+              <div class="shosename">
+                <p class="shosename1">Fall Limited Edition Sneakers</p>
+                <p class="ammount1">$125.00 x <span class="count1">2</span> = <span class="totalammount">$125.00</span></p>
+              </div>
+              <img src="images/icon-delete.svg" alt="delete" class="delet">
+          </div>
+          <div class="procedsection">
+            <button type="button" class="checkoutbutton">Checkout</button>
+          </div>
+        </div>
+        <div class="lowerhoverdiv">
+          <p class="beforeslecttheitem">Your cart is empty.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="maincontent">
+    <div class="leftmaincontent">
+      <div class="bigimage">
+        <img src="images/image-product-1.jpg" alt="mainimage" class="mainimage">
+      </div>
+      <div class="smallimagesection">
+        <div class="bg-images" id="bg-image" data-image="/images/image-product-1-thumbnail.jpg"></div>
+        <div class="bg-images" id="bg-image1" data-image="/images/image-product-2-thumbnail.jpg"></div>
+        <div class="bg-images" id="bg-image2" data-image="/images/image-product-3-thumbnail.jpg"></div>
+        <div class="bg-images" id="bg-image3" data-image="/images/image-product-4-thumbnail.jpg"></div>
+
+        <!-- <img src="/images/image-product-1-thumbnail.jpg" alt="tumblain" class="smallimg">
+        <img src="/images/image-product-2-thumbnail.jpg" alt="tumblain" class="smallimg">
+        <img src="/images/image-product-3-thumbnail.jpg" alt="tumblain" class="smallimg">
+        <img src="/images/image-product-4-thumbnail.jpg" alt="tumblain" class="smallimg"> -->
+      </div>
+    </div>
+    <div class="rightmaincontent">
+      <p class="company">SNEAKER COMPANY</p>
+      <h1 class="Limited">Fall Limited Edition Sneakers</h1>
+      <div class="explaincontent">
+        <p class="explation">These low-profile sneakers are your perfect casual wear companion. Featiring a durable ruber outer sole,they'll withstand everything the weather can offer</p>
+      </div>
+      <h3 class="ammount">$125.00 <span class="disccount">50%</span></h3>
+      <p class="cutprice">$250.00</p>
+      <div class="allcartrelateddiv">
+        <div class="countproductsection">
+
+
+          <img src="images/icon-minus.svg" alt="minus" class="minus">
+          <p class="count">0</p>
+
+          <img src="images/icon-plus.svg" alt="plus" class="plus">
+
+
+        </div>
+        <div class="addcartoption">
+          <img src="images/icon-cart.svg" alt="cartimage" class="addcartimg">
+          <p class="carttext">Add to cart</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
