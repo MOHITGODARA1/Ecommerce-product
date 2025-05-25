@@ -433,6 +433,7 @@
    }
    .allcartrelateddiv{
       justify-content: space-evenly;
+      height: 100px;
    }
    .minus{
    margin-left: 0px;
