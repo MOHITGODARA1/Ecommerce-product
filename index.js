@@ -100,3 +100,43 @@ function countdisplay(count){
    }
    display.textContent=count;
 }
+
+//menu bar for mobile
+const menuediv=document.querySelector(".menusection");
+const memu=document.querySelector(".menu");
+const cross=document.querySelector(".cross");
+const mobilecart=document.querySelector(".mobilecartimage");
+memu.addEventListener("click",(event)=>{
+   event.stopPropagation();
+   menuediv.style.display="block";
+});
+cross.addEventListener("click",()=>{
+   menuediv.style.display="none";
+})
+
+
+
+// jas code for mobile cart
+
+const mobilecount=document.querySelector(".mobilecount");
+const mobiletotalammount=document.querySelector(".mobiletotalammount");
+const cartdiv=document.querySelector(".cartdiv");
+const allfullcart=document.querySelector(".allfullcart");
+mobilecart.addEventListener("click",(event)=>{
+   event.stopPropagation();
+   if(count>0){
+      document.querySelector(".emptycart").style.display="none";
+      allfullcart.style.display="block"
+      mobilecount.textContent=count;
+      const mobiletotal=count*125.00;
+      mobiletotalammount.textContent=`$${mobiletotal.toFixed(2)}`;
+   }else{
+      allfullcart.style.display="none";
+      document.querySelector(".emptycart").style.display="";
+   }
+   cartdiv.style.display="block";
+});
+document.addEventListener("click", () => {
+  cartdiv.style.display = "none";
+  menuediv.style.display="none";
+});
