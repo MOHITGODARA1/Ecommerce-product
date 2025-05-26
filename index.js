@@ -36,6 +36,7 @@ smallimages.forEach(div=>{
       this.style.backgroundImage=`linear-gradient(rgba(201, 199, 196, 0.448), rgba(201, 199, 196, 0.448)), url('${imagepath}')`;
       this.style.border="3px solid rgb(255, 166, 0)";
       mainimage.src=`images/image-product-${num}.jpg`;
+      
    });
 });
 
@@ -140,3 +141,27 @@ document.addEventListener("click", () => {
   cartdiv.style.display = "none";
   menuediv.style.display="none";
 });
+
+//image skip
+
+const pre=document.querySelector(".pre");
+const next=document.querySelector(".next");
+let skip=1;
+pre.addEventListener("click",()=>{
+   if(skip==0){
+      skip=4;
+   }
+   forimagechange(skip);
+   skip--;
+});
+next.addEventListener("click",()=>{
+   if(skip==4){
+      skip=1;
+   }
+   forimagechange(skip);
+   skip++;
+   
+});
+function forimagechange(skip){
+   mainimage.src=`images/image-product-${skip}.jpg`;
+}

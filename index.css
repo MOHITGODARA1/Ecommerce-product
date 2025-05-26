@@ -469,7 +469,10 @@
    font-family: var(--font-style);
    font-family: 500;
 }
-
+.pre{
+   display: none;
+   position: absolute;
+}
 .emptycart{
    display: flex;
    justify-content: center;
@@ -488,7 +491,10 @@
 
 
 
-
+.next{
+   display: none;
+   position: absolute;
+}
 
 
 
@@ -501,6 +507,27 @@
       margin-top: 0px;
       width: 100%;
    }
+   .next{
+      display: flex;
+     height: 30px;
+        width: 27px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        margin-top: -270px;
+   }
+   .pre{
+         height: 30px;
+        width: 27px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 225px;
+}
    .maincontent{
       flex-direction: column;
    }
